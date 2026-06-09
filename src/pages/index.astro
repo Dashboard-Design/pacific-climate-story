@@ -1,0 +1,121 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StorySection from '../components/StorySection.astro';
+import ChartEmbed from '../components/ChartEmbed.astro';
+import FakeChart from '../components/FakeChart.astro';
+---
+
+<Layout>
+  <div class="story-container">
+    <!-- Hero -->
+    <header style="text-align: center; margin-bottom: 4rem;">
+      <h1>Rising Tides,<br />Shrinking Worlds</h1>
+      <p class="subtitle">How a warming ocean cascades into hunger, thirst, and loss across the Pacific</p>
+      <p style="font-size: 0.9rem; color: var(--muted);">A story for the Pacific Dataviz Challenge 2026</p>
+    </header>
+
+    <!-- Intro -->
+    <StorySection>
+      <p>
+        The Pacific Ocean is not just water—it is home, highway, and lifeline for millions. 
+        But as the planet warms, this vast blue expanse is turning into a threat multiplier, 
+        setting off a chain reaction that touches every aspect of life on the islands.
+      </p>
+    </StorySection>
+
+    <!-- Beat 1: Ocean on Fire -->
+    <StorySection title="1. An Ocean on Fire">
+      <p>
+        Sea surface temperatures across the Pacific have been climbing for decades. 
+        This extra heat isn't just an abstract number—it fuels stronger storms, 
+        bleaches corals, and disrupts the marine food web that millions depend on.
+      </p>
+    </StorySection>
+
+    <!-- Fake line chart for temperature anomaly -->
+    <FakeChart type="line">
+      <span slot="caption">Mean sea surface temperature anomaly (placeholder data)</span>
+    </FakeChart>
+
+    <!-- Later you'll replace with a real Plotly embed: 
+    <ChartEmbed src="temp-anomaly.html" height={500}>
+      <span slot="caption">Mean sea surface temperature anomaly (°C), 1950-2025. Source: Pacific Data Hub</span>
+    </ChartEmbed>
+    -->
+
+    <!-- Beat 2: Sea Level Rise -->
+    <StorySection title="2. The Water Is Rising">
+      <p>
+        Warmer water expands, and melting ice adds volume. For low-lying atolls, 
+        a few centimetres of rise means the difference between a safe home and a flooded one.
+        In some places, the sea is creeping inland faster than anyone predicted.
+      </p>
+    </StorySection>
+
+    <FakeChart type="bar">
+      <span slot="caption">Sea level anomalies for selected Pacific nations (mm, placeholder)</span>
+    </FakeChart>
+
+    <!-- Beat 3: Disasters & Displacement -->
+    <StorySection title="3. When the Sea Attacks">
+      <p>
+        Higher seas make storm surges deadlier. Cyclones, once manageable, now leave
+        a trail of destruction. The number of people directly affected by disasters
+        has spiked, along with economic losses that small island economies can ill afford.
+      </p>
+    </StorySection>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <FakeChart type="bar">
+        <span slot="caption">Affected persons (thousands)</span>
+      </FakeChart>
+      <FakeChart type="bar">
+        <span slot="caption">Economic loss (USD millions)</span>
+      </FakeChart>
+    </div>
+
+    <!-- Beat 4: Thirst -->
+    <StorySection title="4. No Water to Drink">
+      <p>
+        As the sea pushes underground, freshwater lenses—fragile layers of drinking water
+        beneath atolls—turn salty. Progress toward safely managed drinking water is stalling
+        or reversing in the most exposed communities.
+      </p>
+    </StorySection>
+
+    <FakeChart type="bar">
+      <span slot="caption">% of population with safely managed drinking water (placeholder)</span>
+    </FakeChart>
+
+    <!-- Beat 5: Fragile Economies, Glimmers of Hope -->
+    <StorySection title="5. A Delicate Balance">
+      <p>
+        Tourism, often the backbone of these economies, is vulnerable to the very impacts
+        that keep visitors away: coral bleaching, beach erosion, and disaster headlines.
+        Yet across the region, renewable energy is quietly growing, offering a glimpse of a
+        more resilient future.
+      </p>
+    </StorySection>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+      <FakeChart type="line">
+        <span slot="caption">Tourist arrivals (thousands)</span>
+      </FakeChart>
+      <FakeChart type="bar">
+        <span slot="caption">Renewable energy share (%)</span>
+      </FakeChart>
+    </div>
+
+    <!-- Closing -->
+    <StorySection>
+      <p style="text-align: center; margin-top: 3rem; font-weight: 600; font-size: 1.1rem;">
+        The data shows a region on the frontline—but also one fighting back.
+        Every decimal point of temperature matters. Every adaptation effort counts.
+        The Pacific's story is ours to understand and to act on.
+      </p>
+      <p style="text-align: center; color: var(--muted); margin-top: 2rem;">
+        Built for the Pacific Dataviz Challenge 2026 · Data from <a href="https://pacificdata.org" target="_blank">Pacific Data Hub</a>
+      </p>
+    </StorySection>
+  </div>
+</Layout>

@@ -1,0 +1,10 @@
+---
+const { src, height = 450 } = Astro.props;
+---
+
+<div class="chart-placeholder">
+  <iframe src={`/charts/${src}`} height={height} title="Interactive chart"></iframe>
+  <div class="chart-caption">
+    <slot name="caption" />
+  </div>
+</div>
