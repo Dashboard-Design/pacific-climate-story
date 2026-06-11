@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "a69f6e13b47801a54d91",
+  "position": {
+    "x": 1157.1428571428571,
+    "y": 602.85714285714289,
+    "z": 5,
+    "height": 94.285714285714292,
+    "width": 712.85714285714289
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CLIMATE_CHANGE"
+                    }
+                  },
+                  "Property": "Climate Change Indicators"
+                }
+              },
+              "queryRef": "CLIMATE_CHANGE.Climate Change Indicators",
+              "nativeQueryRef": "Climate Change Indicators"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

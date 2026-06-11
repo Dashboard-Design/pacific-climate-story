@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "d002171288ed7a5963d0",
+  "position": {
+    "x": 0,
+    "y": 492.85714285714289,
+    "z": 4,
+    "height": 587.14285714285722,
+    "width": 327.14285714285717,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "listSlicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CLIMATE_CHANGE"
+                    }
+                  },
+                  "Property": "Pacific Island Countries and territories"
+                }
+              },
+              "queryRef": "CLIMATE_CHANGE.Pacific Island Countries and territories",
+              "nativeQueryRef": "Pacific Island Countries and territories",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

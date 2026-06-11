@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "c6ef28cd81a8548a4798",
+  "position": {
+    "x": 402.85714285714289,
+    "y": 602.85714285714289,
+    "z": 3,
+    "height": 94.285714285714292,
+    "width": 712.85714285714289
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CLIMATE_CHANGE"
+                        }
+                      },
+                      "Property": "Unit of measure"
+                    }
+                  },
+                  "Function": 3
+                }
+              },
+              "queryRef": "Min(CLIMATE_CHANGE.Unit of measure)",
+              "nativeQueryRef": "Unit of measure"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

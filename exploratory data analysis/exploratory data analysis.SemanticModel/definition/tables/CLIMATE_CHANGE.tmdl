@@ -1,0 +1,230 @@
+table CLIMATE_CHANGE
+	lineageTag: de653335-f1e7-4c37-80a6-f26d8286beaa
+
+	column STRUCTURE
+		dataType: string
+		lineageTag: bcbe1ed8-4296-4fa5-a6f5-c42236c054c2
+		summarizeBy: none
+		sourceColumn: STRUCTURE
+
+		annotation SummarizationSetBy = Automatic
+
+	column STRUCTURE_ID
+		dataType: string
+		lineageTag: 0a71bdca-97a5-4baa-805a-8c1087670ada
+		summarizeBy: none
+		sourceColumn: STRUCTURE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column STRUCTURE_NAME
+		dataType: string
+		lineageTag: 48b80660-1368-4770-b753-f0d4fb1d7ebb
+		summarizeBy: none
+		sourceColumn: STRUCTURE_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACTION
+		dataType: string
+		lineageTag: 2f43bcb6-58f4-4ceb-9b1f-9ee09a7aa8c8
+		summarizeBy: none
+		sourceColumn: ACTION
+
+		annotation SummarizationSetBy = Automatic
+
+	column FREQ
+		dataType: string
+		lineageTag: e21b92fb-5267-4f2c-af3f-f9cac9addfee
+		summarizeBy: none
+		sourceColumn: FREQ
+
+		annotation SummarizationSetBy = Automatic
+
+	column Frequency
+		dataType: string
+		lineageTag: 64fdcb7d-7655-4f0c-a5c3-21be5f9d95d4
+		summarizeBy: none
+		sourceColumn: Frequency
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIMATE_CHANGE_INDICATORS
+		dataType: string
+		lineageTag: 9724e507-978a-441d-a4f4-064d7f8e711b
+		summarizeBy: none
+		sourceColumn: CLIMATE_CHANGE_INDICATORS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Climate Change Indicators'
+		dataType: string
+		lineageTag: 25e4a933-61ec-439f-a4b1-69aec4e10aee
+		summarizeBy: none
+		sourceColumn: Climate Change Indicators
+
+		annotation SummarizationSetBy = Automatic
+
+	column GEO_PICT
+		dataType: string
+		lineageTag: 9fc158ba-6cfe-4089-b004-0692cf0ec1a9
+		summarizeBy: none
+		sourceColumn: GEO_PICT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Pacific Island Countries and territories'
+		dataType: string
+		lineageTag: 84ac556e-f1ac-4867-bde1-84f2b7eafc72
+		summarizeBy: none
+		sourceColumn: Pacific Island Countries and territories
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIME_PERIOD
+		dataType: int64
+		formatString: 0
+		lineageTag: fc83a3c6-cb0d-431e-80ed-d7f6ccfc75b5
+		summarizeBy: sum
+		sourceColumn: TIME_PERIOD
+
+		annotation SummarizationSetBy = Automatic
+
+	column Time
+		dataType: string
+		lineageTag: 6b44f9b4-e740-4e84-9017-2ee5c91db358
+		summarizeBy: none
+		sourceColumn: Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column OBS_VALUE
+		dataType: double
+		lineageTag: 2b7d3cf0-b7c3-4be4-8eb1-4711b9739980
+		summarizeBy: sum
+		sourceColumn: OBS_VALUE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Observation value'
+		dataType: string
+		lineageTag: 0dd0c54b-c822-4ebb-9951-eb7ad9f150bf
+		summarizeBy: none
+		sourceColumn: Observation value
+
+		annotation SummarizationSetBy = Automatic
+
+	column OBS_STATUS
+		dataType: string
+		lineageTag: ae091a15-7578-4799-85bf-a3292920f0f7
+		summarizeBy: none
+		sourceColumn: OBS_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Observation Status'
+		dataType: string
+		lineageTag: a657420a-644c-42d1-be43-2e7e9a1bab6d
+		summarizeBy: none
+		sourceColumn: Observation Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column UNIT_MEASURE
+		dataType: string
+		lineageTag: 13a704ae-124e-4f30-ae72-4cc0a38c112a
+		summarizeBy: none
+		sourceColumn: UNIT_MEASURE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unit of measure'
+		dataType: string
+		lineageTag: cf870a89-c44e-4f55-9ecf-55f324ead0a6
+		summarizeBy: none
+		sourceColumn: Unit of measure
+
+		annotation SummarizationSetBy = Automatic
+
+	column ERROR_TYPE
+		dataType: string
+		lineageTag: de5bba2d-38e0-42dc-95d2-5f02d084fb63
+		summarizeBy: none
+		sourceColumn: ERROR_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Error type'
+		dataType: string
+		lineageTag: ee9ac63e-a5f9-405c-8588-89d7ae07dbcf
+		summarizeBy: none
+		sourceColumn: Error type
+
+		annotation SummarizationSetBy = Automatic
+
+	column ERROR_VAL
+		dataType: double
+		lineageTag: c4e03c4d-9b82-46d1-b24a-2e37c54a22df
+		summarizeBy: sum
+		sourceColumn: ERROR_VAL
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Error value'
+		dataType: string
+		lineageTag: fcea4465-97ca-4ef8-9b48-8cebc2427a68
+		summarizeBy: none
+		sourceColumn: Error value
+
+		annotation SummarizationSetBy = Automatic
+
+	column REPORTING_TYPE
+		dataType: string
+		lineageTag: 4930a8c8-c3c6-45d4-b431-98a793966bb0
+		summarizeBy: none
+		sourceColumn: REPORTING_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reporting Type'
+		dataType: string
+		lineageTag: 684e5e05-4255-444c-889c-620a7dea0dc5
+		summarizeBy: none
+		sourceColumn: Reporting Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column OBS_COMMENT
+		dataType: string
+		lineageTag: ad13f1e6-ef5e-4220-bcb5-f45f9ca04767
+		summarizeBy: none
+		sourceColumn: OBS_COMMENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column Comment
+		dataType: string
+		lineageTag: e3d2a6a0-fb35-434a-bcac-0728aa94c8ce
+		summarizeBy: none
+		sourceColumn: Comment
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CLIMATE_CHANGE = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("F:\Projects\GitHub Projects\pacific-climate-story\dataset\SPC,DF_CLIMATE_CHANGE,1.0,complete,2026-06-07 20-29-28.csv"), [Delimiter = ",", Columns = 26, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"STRUCTURE", type text}, {"STRUCTURE_ID", type text}, {"STRUCTURE_NAME", type text}, {"ACTION", type text}, {"FREQ", type text}, {"Frequency", type text}, {"CLIMATE_CHANGE_INDICATORS", type text}, {"Climate Change Indicators", type text}, {"GEO_PICT", type text}, {"Pacific Island Countries and territories", type text}, {"TIME_PERIOD", Int64.Type}, {"Time", type text}, {"OBS_VALUE", type number}, {"Observation value", type text}, {"OBS_STATUS", type text}, {"Observation Status", type text}, {"UNIT_MEASURE", type text}, {"Unit of measure", type text}, {"ERROR_TYPE", type text}, {"Error type", type text}, {"ERROR_VAL", type number}, {"Error value", type text}, {"REPORTING_TYPE", type text}, {"Reporting Type", type text}, {"OBS_COMMENT", type text}, {"Comment", type text}})
+				in
+				  #"Changed column type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

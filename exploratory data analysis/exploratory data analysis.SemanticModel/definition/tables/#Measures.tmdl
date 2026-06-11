@@ -1,0 +1,28 @@
+table #Measures
+	lineageTag: f9d824f4-d796-4886-8588-c02060db0c07
+
+	measure #count = COUNTROWS(CLIMATE_CHANGE)
+		formatString: 0
+		lineageTag: 6e65167f-b419-439a-8054-9b5bc3c23473
+
+	measure Avg_Observation_Value = AVERAGE( CLIMATE_CHANGE[OBS_VALUE] )
+		formatString: 0
+		lineageTag: 96e6ad67-0e2b-4c06-9180-e55c76aa69f4
+
+	measure Baseline = 1
+		formatString: 0
+		lineageTag: 14dd6480-cb25-4479-9ba2-d515d78b7c62
+
+	partition #Measures = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Removed Columns" = Table.RemoveColumns(Source,{"Column1"})
+				in
+				  #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
